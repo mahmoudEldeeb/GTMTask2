@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">GTMTask</string>
+
+    <string name="facebook_app_id">2250567064978992</string>
+    <string name="fb_login_protocol_scheme">fb2250567064978992</string>
+    <string name="email">email</string>
 </resources>

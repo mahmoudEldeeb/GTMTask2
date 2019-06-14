@@ -1,7 +1,9 @@
-package com.deeb.gtmtask;
+package com.deeb.gtmtask.views;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.deeb.gtmtask.R;
 
 public class MainActivity extends AppCompatActivity {
 
