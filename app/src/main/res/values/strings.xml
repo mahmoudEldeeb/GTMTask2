@@ -11,7 +11,8 @@
     <string name="desc">description</string>
     <string name="save">Save</string>
 
-    <string name="countries">
+   <string name="countries1">{
+"countries":
 [
   {
     "en": "Afghanistan",
@@ -1259,5 +1260,35 @@
     "code": "ZW"
   }
 ]
-</string>
+}</string>
+  <string name="countries">{
+"countries":
+[
+  {
+    "en": "Afghanistan",
+    "local": "Afghanistan (l')",
+    "code": "AF"
+  },
+  {
+    "en": "Åland Islands",
+    "local": "Åland(les Îles)",
+    "code": "AX"
+  },
+  {
+    "en": "Albania",
+    "local": "Albanie (l')",
+    "code": "AL"
+  },
+  {
+    "en": "Algeria",
+    "local": "Algérie (l')",
+    "code": "DZ"
+  },
+  {
+    "en": "American Samoa",
+    "local": "Samoa américaines (les)",
+    "code": "AS"
+  }
+]
+}</string>
 </resources>
