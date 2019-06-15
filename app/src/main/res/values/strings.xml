@@ -11,7 +11,7 @@
     <string name="desc">description</string>
     <string name="save">Save</string>
 
-   <string name="countries1">{
+  <string name="countries1">{
 "countries":
 [
   {
