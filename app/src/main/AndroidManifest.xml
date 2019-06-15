@@ -14,11 +14,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".views.AddCalenderEvent"> <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
-
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter></activity>
+        <activity android:name=".views.AddCalenderEvent"></activity>
         <activity android:name=".views.CountrySearch">
 
         </activity>
@@ -26,7 +22,13 @@
         <activity android:name=".views.ShowStoreOnMap" />
         <activity android:name=".views.SaveAndRetreveData" />
         <activity android:name=".views.LoginUsingFacebookk" />
-        <activity android:name=".views.MainActivity" />
+        <activity android:name=".views.MainActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
 
         <meta-data
             android:name="com.facebook.sdk.ApplicationId"
