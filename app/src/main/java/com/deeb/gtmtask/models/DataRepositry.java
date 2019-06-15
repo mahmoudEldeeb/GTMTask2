@@ -1,6 +1,5 @@
 package com.deeb.gtmtask.models;
 
-import android.app.Application;
 import android.arch.lifecycle.LiveData;
 import android.os.AsyncTask;
 
@@ -17,10 +16,12 @@ public class DataRepositry {
         database db = database.getDatabase(Constants.application);
         dataDao= db.dao();
     }
-
+//i use room to insert in it data
     public void insert (DataItem dataItem) {
         new insertAsyncTask().execute(dataItem);
     }
+
+    //return data as Livedata
     public LiveData<List<DataItem>>getData(){
         return dataDao.getData();
 

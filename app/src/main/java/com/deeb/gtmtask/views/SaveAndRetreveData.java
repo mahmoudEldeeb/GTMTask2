@@ -44,6 +44,7 @@ public class SaveAndRetreveData extends AppCompatActivity {
             }
         });
     }
+    /// i use this method to change fragment
     public void replaceFragment(){
         fragmentManager = getSupportFragmentManager();
         fragmentTransaction =

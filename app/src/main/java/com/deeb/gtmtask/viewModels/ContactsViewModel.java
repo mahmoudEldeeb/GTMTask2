@@ -18,11 +18,10 @@ public class ContactsViewModel extends ViewModel {
     public MutableLiveData<List<ContactsModel>>getContacts(){
         contacts=new MutableLiveData<>();
         contacts.setValue(new ArrayList<ContactsModel>());
-List<ContactsModel>list=new ArrayList<>();
+        // use getContentResolver to get contacts
         Cursor cursor= Constants.context.getContentResolver().query(ContactsContract.CommonDataKinds.Phone.CONTENT_URI,
                 null,null,null,null);
         while (cursor.moveToNext()){
-
            String name= cursor.getString(cursor.getColumnIndex(ContactsContract.CommonDataKinds.Phone.DISPLAY_NAME));
             String number= cursor.getString(cursor.getColumnIndex(ContactsContract.CommonDataKinds.Phone.NUMBER));
             contactsModel=new ContactsModel(name,number);

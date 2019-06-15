@@ -50,6 +50,7 @@ ContactsViewModel contactsViewModel;
         RecyclerView.LayoutManager layoutManager=new LinearLayoutManager(this);
         contacts_res.setLayoutManager(layoutManager);
         contactsViewModel= ViewModelProviders.of(this).get(ContactsViewModel.class);
+        //use viewmodel to load data
         contactsViewModel.getContacts().observe(this, new Observer<List<ContactsModel>>() {
     @Override
     public void onChanged(@Nullable List<ContactsModel> contactsModels) {

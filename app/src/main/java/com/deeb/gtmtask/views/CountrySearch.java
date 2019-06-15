@@ -35,6 +35,7 @@ TextView country_name;
         Constants.context=this;
         country_name=findViewById(R.id.country_name);
         countryViewModels= ViewModelProviders.of(this).get(CountryViewModels.class);
+        //Use search view to listener to change of text search
         search_view.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
             public boolean onQueryTextSubmit(String query) {
@@ -58,7 +59,6 @@ TextView country_name;
             @Override
             public boolean onSuggestionClick(int i) {
                 search_view.setQuery(cursor.getString(1),true);
-//                country_name.setText(cursor.getString(1));
                 return false;
             }
         });
@@ -70,6 +70,7 @@ TextView country_name;
             public void onChanged(@Nullable List<CountryModel> countryModels) {
                 String[] columns = new String[]{"_id", "text"};
                 cursor = new MatrixCursor(columns);
+                /// i use SuggestionsAdapter  to show countries name as search suggestion
                 mSuggestionsAdapter = new SuggestionsAdapter(CountrySearch.this, cursor);
                 search_view.setSuggestionsAdapter(mSuggestionsAdapter);
                 for(int i=0;i<countryModels.size();i++){
